@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./form.main.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Formulário de Depósito</h1>
+        <form id="form-deposito">
+            <input type="number" id="campo-a" required placeholder="Campo A" min="0"/>
+            <input type="number" id="campo-b" required placeholder="Campo B" min="0"/>
+            <p class="error-message"> 
+                O número do campo B precisa ser maior que o número do campo A.
+            </p>
+            <textarea placeholder="Descrição (opcional)" id="descricao"></textarea>
+            <button id="btn-enviar" type="submit">Enviar</button>
+        </form>
+        <p class="success-message"></p>
+        </div>
+        <script src="./form.js"></script>
+</body>
+</html>
